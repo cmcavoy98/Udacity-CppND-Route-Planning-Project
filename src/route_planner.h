@@ -22,6 +22,7 @@ class RoutePlanner {
 
   private:
     // Add private variables or methods declarations here.
+    bool CompareFun(const RouteModel::Node *a, const RouteModel::Node *b);
     std::vector<RouteModel::Node*> open_list;
     RouteModel::Node *start_node;
     RouteModel::Node *end_node;
